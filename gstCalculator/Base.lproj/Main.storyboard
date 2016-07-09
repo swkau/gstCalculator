@@ -32,14 +32,17 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hql-wB-isv">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hql-wB-isv">
                                 <rect key="frame" x="244" y="135" width="111" height="30"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Calculate"/>
+                                <connections>
+                                    <action selector="calculateButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GpL-UC-jsv"/>
+                                </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Awaiting Input.." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sjz-XM-ffY">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Awaiting Input.." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sjz-XM-ffY">
                                 <rect key="frame" x="185" y="173" width="229" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -48,13 +51,30 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="hql-wB-isv" secondAttribute="trailing" constant="64" id="0X1-rh-hVf"/>
+                            <constraint firstItem="sjz-XM-ffY" firstAttribute="top" secondItem="hql-wB-isv" secondAttribute="bottom" constant="8" id="1js-rp-dr9"/>
                             <constraint firstItem="bDr-Mi-2g2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1nf-RI-NHY"/>
                             <constraint firstItem="bDr-Mi-2g2" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="14" id="4y5-18-wDV"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="sjz-XM-ffY" secondAttribute="trailing" constant="64" id="9Af-t8-Ryl"/>
                             <constraint firstItem="bDr-Mi-2g2" firstAttribute="centerX" secondItem="sph-ld-ud5" secondAttribute="centerX" id="C5u-Yn-R4U"/>
                             <constraint firstItem="sph-ld-ud5" firstAttribute="top" secondItem="bDr-Mi-2g2" secondAttribute="bottom" constant="21" id="Nja-hg-arM"/>
+                            <constraint firstItem="sph-ld-ud5" firstAttribute="top" secondItem="bDr-Mi-2g2" secondAttribute="bottom" constant="21" id="Nno-ay-GjH"/>
+                            <constraint firstItem="sjz-XM-ffY" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="64" id="OaM-0f-6JG"/>
+                            <constraint firstItem="hql-wB-isv" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="64" id="Ovo-KI-2JS"/>
+                            <constraint firstItem="sph-ld-ud5" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="64" id="QdR-mU-Lf9"/>
+                            <constraint firstItem="bDr-Mi-2g2" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="14" id="RKC-wZ-dO4"/>
                             <constraint firstItem="bDr-Mi-2g2" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="63" id="USN-om-UTm"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="bDr-Mi-2g2" secondAttribute="trailing" constant="64" id="i0Y-3Y-9Cr"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="sph-ld-ud5" secondAttribute="trailing" constant="64" id="j6S-qw-w5r"/>
+                            <constraint firstItem="bDr-Mi-2g2" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="64" id="oLP-A9-uwH"/>
+                            <constraint firstItem="hql-wB-isv" firstAttribute="top" secondItem="sph-ld-ud5" secondAttribute="bottom" constant="17" id="wg4-fG-b9Q"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="answerLabel" destination="sjz-XM-ffY" id="WMz-L8-YlY"/>
+                        <outlet property="textField" destination="sph-ld-ud5" id="HFE-dS-F9G"/>
+                        <outlet property="textLabel" destination="bDr-Mi-2g2" id="8eb-4G-xIx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
