@@ -18,7 +18,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please enter amount for GST Calculation" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bDr-Mi-2g2">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="GST Calculator (at 7%)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bDr-Mi-2g2">
                                 <rect key="frame" x="83" y="34" width="433" height="33"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="33" id="lKO-Um-6aF"/>
@@ -48,29 +48,48 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bdf-xH-5jM">
+                                <rect key="frame" x="225" y="211" width="150" height="32"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B4U-ti-7no">
+                                <rect key="frame" x="244" y="251" width="111" height="28"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="hql-wB-isv" secondAttribute="trailing" constant="64" id="0X1-rh-hVf"/>
-                            <constraint firstItem="sjz-XM-ffY" firstAttribute="top" secondItem="hql-wB-isv" secondAttribute="bottom" constant="8" id="1js-rp-dr9"/>
+                            <constraint firstItem="sjz-XM-ffY" firstAttribute="top" secondItem="hql-wB-isv" secondAttribute="bottom" constant="24" id="1js-rp-dr9"/>
                             <constraint firstItem="bDr-Mi-2g2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1nf-RI-NHY"/>
                             <constraint firstItem="bDr-Mi-2g2" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="14" id="4y5-18-wDV"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="sjz-XM-ffY" secondAttribute="trailing" constant="64" id="9Af-t8-Ryl"/>
+                            <constraint firstItem="B4U-ti-7no" firstAttribute="top" secondItem="Bdf-xH-5jM" secondAttribute="bottom" constant="24" id="BYb-P1-iE6"/>
                             <constraint firstItem="bDr-Mi-2g2" firstAttribute="centerX" secondItem="sph-ld-ud5" secondAttribute="centerX" id="C5u-Yn-R4U"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Bdf-xH-5jM" secondAttribute="trailing" constant="10" id="IGa-Rc-Uav"/>
+                            <constraint firstItem="Bdf-xH-5jM" firstAttribute="top" secondItem="sjz-XM-ffY" secondAttribute="bottom" constant="24" id="JJ4-fN-djQ"/>
+                            <constraint firstItem="B4U-ti-7no" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="MJV-9E-Gqp"/>
                             <constraint firstItem="sph-ld-ud5" firstAttribute="top" secondItem="bDr-Mi-2g2" secondAttribute="bottom" constant="21" id="Nja-hg-arM"/>
                             <constraint firstItem="sph-ld-ud5" firstAttribute="top" secondItem="bDr-Mi-2g2" secondAttribute="bottom" constant="21" id="Nno-ay-GjH"/>
-                            <constraint firstItem="sjz-XM-ffY" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="64" id="OaM-0f-6JG"/>
                             <constraint firstItem="hql-wB-isv" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="64" id="Ovo-KI-2JS"/>
                             <constraint firstItem="sph-ld-ud5" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="64" id="QdR-mU-Lf9"/>
                             <constraint firstItem="bDr-Mi-2g2" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="14" id="RKC-wZ-dO4"/>
-                            <constraint firstItem="bDr-Mi-2g2" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="63" id="USN-om-UTm"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="bDr-Mi-2g2" secondAttribute="trailing" constant="64" id="i0Y-3Y-9Cr"/>
+                            <constraint firstItem="bDr-Mi-2g2" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="32" id="USN-om-UTm"/>
+                            <constraint firstItem="Bdf-xH-5jM" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="WuB-Kt-Ufx"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="sjz-XM-ffY" secondAttribute="trailing" constant="32" id="cV0-rm-U5G"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="bDr-Mi-2g2" secondAttribute="trailing" constant="32" id="i0Y-3Y-9Cr"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="B4U-ti-7no" secondAttribute="trailing" constant="10" id="ipD-fj-oxC"/>
                             <constraint firstAttribute="trailingMargin" secondItem="sph-ld-ud5" secondAttribute="trailing" constant="64" id="j6S-qw-w5r"/>
-                            <constraint firstItem="bDr-Mi-2g2" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="64" id="oLP-A9-uwH"/>
+                            <constraint firstItem="sjz-XM-ffY" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="32" id="qby-MZ-eTR"/>
                             <constraint firstItem="hql-wB-isv" firstAttribute="top" secondItem="sph-ld-ud5" secondAttribute="bottom" constant="17" id="wg4-fG-b9Q"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="answer2Label" destination="Bdf-xH-5jM" id="pf5-H8-rdI"/>
+                        <outlet property="answer3Label" destination="B4U-ti-7no" id="uea-V1-kAj"/>
                         <outlet property="answerLabel" destination="sjz-XM-ffY" id="WMz-L8-YlY"/>
                         <outlet property="textField" destination="sph-ld-ud5" id="HFE-dS-F9G"/>
                         <outlet property="textLabel" destination="bDr-Mi-2g2" id="8eb-4G-xIx"/>
